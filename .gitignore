@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+
+# Data and models live on Hugging Face Hub, never in git (D-019)
+data/
+*.parquet
+*.nc
+*.zip
+*.csv
+models/
+artifacts/
+
+# Secrets: keys belong in GitHub / Colab / Kaggle secrets, never in files
+.env
+.env.*
+!.env.example
+.cdsapirc
+
+# Node / Next.js (web/, from B5)
+node_modules/
+.next/
+out/
+.vercel/
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Notebooks
+.ipynb_checkpoints/

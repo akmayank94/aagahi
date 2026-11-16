@@ -1,0 +1,315 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1360" viewBox="0 0 2000 1360">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker><marker id="arrowS" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M10,0 L0,5 L10,10 z" fill="#334155"/></marker></defs>
+<rect width="2000" height="1360" fill="#FFFFFF"/>
+<text x="30" y="52" font-family="Inter, DejaVu Sans, sans-serif" font-size="30" font-weight="800" fill="#0F172A" text-anchor="start">Saans — v1 System Architecture (Delhi-NCR)</text>
+<text x="30" y="82" font-family="Inter, DejaVu Sans, sans-serif" font-size="15" font-weight="500" fill="#475569" text-anchor="start">Hourly batch forecasting  ·  static-first web  ·  grounded AI agent  ·  ₹0 / month  ·  working name, final name in Phase 6</text>
+<rect x="30" y="120" width="300" height="990" rx="16" fill="#EEF2FF" stroke="#6366F1" stroke-width="1.2"/>
+<text x="48" y="152" font-family="Inter, DejaVu Sans, sans-serif" font-size="17" font-weight="800" fill="#6366F1" text-anchor="start">1 · Data sources</text>
+<rect x="370" y="120" width="700" height="990" rx="16" fill="#ECFDF5" stroke="#10B981" stroke-width="1.2"/>
+<text x="388" y="152" font-family="Inter, DejaVu Sans, sans-serif" font-size="17" font-weight="800" fill="#10B981" text-anchor="start">2 · Pipeline on GitHub Actions (Python)</text>
+<rect x="1110" y="120" width="290" height="990" rx="16" fill="#FFF7ED" stroke="#F59E0B" stroke-width="1.2"/>
+<text x="1128" y="152" font-family="Inter, DejaVu Sans, sans-serif" font-size="17" font-weight="800" fill="#F59E0B" text-anchor="start">3 · Storage · Hugging Face Hub</text>
+<rect x="1440" y="120" width="300" height="990" rx="16" fill="#F0F9FF" stroke="#0EA5E9" stroke-width="1.2"/>
+<text x="1458" y="152" font-family="Inter, DejaVu Sans, sans-serif" font-size="17" font-weight="800" fill="#0EA5E9" text-anchor="start">4 · Serving · Vercel (Next.js)</text>
+<rect x="1780" y="120" width="190" height="990" rx="16" fill="#FDF2F8" stroke="#EC4899" stroke-width="1.2"/>
+<text x="1798" y="152" font-family="Inter, DejaVu Sans, sans-serif" font-size="17" font-weight="800" fill="#EC4899" text-anchor="start">5 · Users</text>
+<rect x="50" y="180" width="260" height="96" rx="10" fill="#FFFFFF" stroke="#6366F1" stroke-width="1.6" stroke-dasharray="7 5"/>
+<rect x="50" y="180" width="6" height="96" rx="3" fill="#6366F1"/>
+<text x="66" y="204" font-family="Inter, DejaVu Sans, sans-serif" font-size="14" font-weight="700" fill="#0F172A" text-anchor="start">CPCB Data Repository</text>
+<text x="66" y="224" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">15-min station history</text>
+<text x="66" y="241" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">one-time backfill from laptop</text>
+<text x="66" y="258" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">(India IP)</text>
+<path d="M 310 228 L 346 228" fill="none" stroke="#6366F1" stroke-width="1.4" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+<rect x="50" y="308" width="260" height="96" rx="10" fill="#FFFFFF" stroke="#6366F1" stroke-width="1.6"/>
+<rect x="50" y="308" width="6" height="96" rx="3" fill="#6366F1"/>
+<text x="66" y="332" font-family="Inter, DejaVu Sans, sans-serif" font-size="14" font-weight="700" fill="#0F172A" text-anchor="start">OpenAQ v3</text>
+<text x="66" y="352" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">live station observations</text>
+<text x="66" y="369" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">≈ 2 h 50 min delay</text>
+<text x="66" y="386" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">56 agency stations ≤ 25 km</text>
+<path d="M 310 356 L 346 356" fill="none" stroke="#6366F1" stroke-width="1.4" marker-end="url(#arrow)"/>
+<rect x="50" y="436" width="260" height="96" rx="10" fill="#FFFFFF" stroke="#6366F1" stroke-width="1.6"/>
+<rect x="50" y="436" width="6" height="96" rx="3" fill="#6366F1"/>
+<text x="66" y="460" font-family="Inter, DejaVu Sans, sans-serif" font-size="14" font-weight="700" fill="#0F172A" text-anchor="start">Open-Meteo · GFS (pinned)</text>
+<text x="66" y="480" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">weather forecast + archive</text>
+<text x="66" y="497" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">as-issued (no best_match)</text>
+<path d="M 310 484 L 346 484" fill="none" stroke="#6366F1" stroke-width="1.4" marker-end="url(#arrow)"/>
+<rect x="50" y="564" width="260" height="96" rx="10" fill="#FFFFFF" stroke="#6366F1" stroke-width="1.6"/>
+<rect x="50" y="564" width="6" height="96" rx="3" fill="#6366F1"/>
+<text x="66" y="588" font-family="Inter, DejaVu Sans, sans-serif" font-size="14" font-weight="700" fill="#0F172A" text-anchor="start">Copernicus ADS · CAMS</text>
+<text x="66" y="608" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">CAMS as issued, by lead time</text>
+<text x="66" y="625" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">training + fair baseline</text>
+<path d="M 310 612 L 346 612" fill="none" stroke="#6366F1" stroke-width="1.4" marker-end="url(#arrow)"/>
+<rect x="50" y="692" width="260" height="96" rx="10" fill="#FFFFFF" stroke="#6366F1" stroke-width="1.6"/>
+<rect x="50" y="692" width="6" height="96" rx="3" fill="#6366F1"/>
+<text x="66" y="716" font-family="Inter, DejaVu Sans, sans-serif" font-size="14" font-weight="700" fill="#0F172A" text-anchor="start">Open-Meteo · CAMS live</text>
+<text x="66" y="736" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">latest CAMS run (live)</text>
+<text x="66" y="753" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">parity-checked vs ADS</text>
+<path d="M 310 740 L 346 740" fill="none" stroke="#6366F1" stroke-width="1.4" marker-end="url(#arrow)"/>
+<rect x="50" y="820" width="260" height="96" rx="10" fill="#FFFFFF" stroke="#6366F1" stroke-width="1.6"/>
+<rect x="50" y="820" width="6" height="96" rx="3" fill="#6366F1"/>
+<text x="66" y="844" font-family="Inter, DejaVu Sans, sans-serif" font-size="14" font-weight="700" fill="#0F172A" text-anchor="start">NASA FIRMS</text>
+<text x="66" y="864" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">satellite fires</text>
+<text x="66" y="881" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">NOAA-20/21 + MODIS (no S-NPP)</text>
+<path d="M 310 868 L 346 868" fill="none" stroke="#6366F1" stroke-width="1.4" marker-end="url(#arrow)"/>
+<rect x="50" y="948" width="260" height="96" rx="10" fill="#FFFFFF" stroke="#6366F1" stroke-width="1.6"/>
+<rect x="50" y="948" width="6" height="96" rx="3" fill="#6366F1"/>
+<text x="66" y="972" font-family="Inter, DejaVu Sans, sans-serif" font-size="14" font-weight="700" fill="#0F172A" text-anchor="start">City config (YAML)</text>
+<text x="66" y="992" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">stations · OpenAQ↔CPCB crosswalk</text>
+<text x="66" y="1009" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">Diwali / GRAP calendar · delays</text>
+<path d="M 310 996 L 346 996" fill="none" stroke="#6366F1" stroke-width="1.4" marker-end="url(#arrow)"/>
+<path d="M 346 228 L 346 996" stroke="#6366F1" stroke-width="3" fill="none"/>
+<path d="M 346 340 L 400 340" fill="none" stroke="#6366F1" stroke-width="2.4" marker-end="url(#arrow)"/>
+<circle cx="372" cy="322" r="12" fill="#6366F1" stroke="#FFFFFF" stroke-width="2"/>
+<text x="372" y="326.5" font-family="Inter, DejaVu Sans, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">2</text>
+<rect x="390" y="168" width="210" height="64" rx="10" fill="#FFFFFF" stroke="#10B981" stroke-width="1.6"/>
+<rect x="390" y="168" width="6" height="64" rx="3" fill="#10B981"/>
+<text x="406" y="192" font-family="Inter, DejaVu Sans, sans-serif" font-size="14" font-weight="700" fill="#0F172A" text-anchor="start">cron-job.org</text>
+<text x="406" y="212" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">external hourly trigger</text>
+<rect x="640" y="168" width="410" height="64" rx="10" fill="#FFFFFF" stroke="#10B981" stroke-width="1.6"/>
+<rect x="640" y="168" width="6" height="64" rx="3" fill="#10B981"/>
+<text x="656" y="192" font-family="Inter, DejaVu Sans, sans-serif" font-size="14" font-weight="700" fill="#0F172A" text-anchor="start">GitHub Actions  (public repo)</text>
+<text x="656" y="212" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">4 vCPU / 16 GB runners · secrets · logs · free</text>
+<path d="M 600 200 L 638 200" fill="none" stroke="#334155" stroke-width="1.8" marker-end="url(#arrow)"/>
+<circle cx="619" cy="182" r="12" fill="#0F172A" stroke="#FFFFFF" stroke-width="2"/>
+<text x="619" y="186.5" font-family="Inter, DejaVu Sans, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">1</text>
+<text x="390" y="262" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="800" fill="#047857" text-anchor="start">HOURLY  ·  hourly.yml</text>
+<rect x="390" y="270" width="660" height="236" rx="12" fill="#FFFFFF" stroke="#A7F3D0" stroke-width="1.2"/>
+<rect x="402" y="300" width="96" height="82" rx="8" fill="#FFFFFF" stroke="#10B981" stroke-width="1.4"/>
+<text x="450.0" y="326" font-family="Inter, DejaVu Sans, sans-serif" font-size="13.5" font-weight="700" fill="#0F172A" text-anchor="middle">Ingest</text>
+<text x="450.0" y="345" font-family="Inter, DejaVu Sans, sans-serif" font-size="10.5" font-weight="400" fill="#475569" text-anchor="middle">fallback chain</text>
+<text x="450.0" y="360" font-family="Inter, DejaVu Sans, sans-serif" font-size="10.5" font-weight="400" fill="#475569" text-anchor="middle">CPCB → OpenAQ</text>
+<path d="M 498 341 L 510 341" fill="none" stroke="#10B981" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="510" y="300" width="96" height="82" rx="8" fill="#FFFFFF" stroke="#10B981" stroke-width="1.4"/>
+<text x="558.0" y="326" font-family="Inter, DejaVu Sans, sans-serif" font-size="13.5" font-weight="700" fill="#0F172A" text-anchor="middle">Validate</text>
+<text x="558.0" y="345" font-family="Inter, DejaVu Sans, sans-serif" font-size="10.5" font-weight="400" fill="#475569" text-anchor="middle">pandera</text>
+<text x="558.0" y="360" font-family="Inter, DejaVu Sans, sans-serif" font-size="10.5" font-weight="400" fill="#475569" text-anchor="middle">data contracts</text>
+<path d="M 606 341 L 618 341" fill="none" stroke="#10B981" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="618" y="300" width="96" height="82" rx="8" fill="#FFFFFF" stroke="#10B981" stroke-width="1.4"/>
+<text x="666.0" y="326" font-family="Inter, DejaVu Sans, sans-serif" font-size="13.5" font-weight="700" fill="#0F172A" text-anchor="middle">Features</text>
+<text x="666.0" y="345" font-family="Inter, DejaVu Sans, sans-serif" font-size="10.5" font-weight="400" fill="#475569" text-anchor="middle">as-issued only</text>
+<text x="666.0" y="360" font-family="Inter, DejaVu Sans, sans-serif" font-size="10.5" font-weight="400" fill="#475569" text-anchor="middle">delay simulated</text>
+<path d="M 714 341 L 726 341" fill="none" stroke="#10B981" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="726" y="300" width="96" height="82" rx="8" fill="#FFFFFF" stroke="#10B981" stroke-width="1.4"/>
+<text x="774.0" y="326" font-family="Inter, DejaVu Sans, sans-serif" font-size="13.5" font-weight="700" fill="#0F172A" text-anchor="middle">Forecast</text>
+<text x="774.0" y="345" font-family="Inter, DejaVu Sans, sans-serif" font-size="10.5" font-weight="400" fill="#475569" text-anchor="middle">LightGBM</text>
+<text x="774.0" y="360" font-family="Inter, DejaVu Sans, sans-serif" font-size="10.5" font-weight="400" fill="#475569" text-anchor="middle">p10 / p50 / p90</text>
+<path d="M 822 341 L 834 341" fill="none" stroke="#10B981" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="834" y="300" width="96" height="82" rx="8" fill="#FFFFFF" stroke="#10B981" stroke-width="1.4"/>
+<text x="882.0" y="326" font-family="Inter, DejaVu Sans, sans-serif" font-size="13.5" font-weight="700" fill="#0F172A" text-anchor="middle">Explain</text>
+<text x="882.0" y="345" font-family="Inter, DejaVu Sans, sans-serif" font-size="10.5" font-weight="400" fill="#475569" text-anchor="middle">SHAP →</text>
+<text x="882.0" y="360" font-family="Inter, DejaVu Sans, sans-serif" font-size="10.5" font-weight="400" fill="#475569" text-anchor="middle">driver families</text>
+<path d="M 930 341 L 942 341" fill="none" stroke="#10B981" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="942" y="300" width="96" height="82" rx="8" fill="#FFFFFF" stroke="#10B981" stroke-width="1.4"/>
+<text x="990.0" y="326" font-family="Inter, DejaVu Sans, sans-serif" font-size="13.5" font-weight="700" fill="#0F172A" text-anchor="middle">Publish</text>
+<text x="990.0" y="345" font-family="Inter, DejaVu Sans, sans-serif" font-size="10.5" font-weight="400" fill="#475569" text-anchor="middle">latest/*.json</text>
+<text x="990.0" y="360" font-family="Inter, DejaVu Sans, sans-serif" font-size="10.5" font-weight="400" fill="#475569" text-anchor="middle">+ status.json</text>
+<text x="402" y="420" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="500" fill="#475569" text-anchor="start">Rules:  weather = GFS archived as issued  ·  CAMS = ADS as issued  ·  obs delayed by measured lag</text>
+<text x="402" y="440" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="500" fill="#475569" text-anchor="start">Uncertainty: conformal calibration → category probabilities  ·  AQI from PM via the CPCB formula</text>
+<text x="402" y="460" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="500" fill="#475569" text-anchor="start">Never: interpolate gaps &gt; 2 h  ·  drop ≥ 999 µg/m³ hours  ·  trust raw fire counts</text>
+<text x="402" y="488" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="700" fill="#047857" text-anchor="start">Run time target: &lt; 10 min per hour  ·  writes 1 commit to &lt;name&gt;-live</text>
+<text x="390" y="532" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="800" fill="#047857" text-anchor="start">NIGHTLY  ·  nightly.yml</text>
+<rect x="390" y="540" width="660" height="130" rx="12" fill="#FFFFFF" stroke="#A7F3D0" stroke-width="1.2"/>
+<rect x="402" y="568" width="160" height="74" rx="8" fill="#FFFFFF" stroke="#10B981" stroke-width="1.4"/>
+<text x="482.0" y="594" font-family="Inter, DejaVu Sans, sans-serif" font-size="13.5" font-weight="700" fill="#0F172A" text-anchor="middle">Evaluate</text>
+<text x="482.0" y="613" font-family="Inter, DejaVu Sans, sans-serif" font-size="10.5" font-weight="400" fill="#475569" text-anchor="middle">yesterday's forecasts</text>
+<text x="482.0" y="628" font-family="Inter, DejaVu Sans, sans-serif" font-size="10.5" font-weight="400" fill="#475569" text-anchor="middle">vs observations</text>
+<rect x="592" y="568" width="160" height="74" rx="8" fill="#FFFFFF" stroke="#10B981" stroke-width="1.4"/>
+<text x="672.0" y="594" font-family="Inter, DejaVu Sans, sans-serif" font-size="13.5" font-weight="700" fill="#0F172A" text-anchor="middle">Scoreboard</text>
+<text x="672.0" y="613" font-family="Inter, DejaVu Sans, sans-serif" font-size="10.5" font-weight="400" fill="#475569" text-anchor="middle">vs persistence · CAMS</text>
+<text x="672.0" y="628" font-family="Inter, DejaVu Sans, sans-serif" font-size="10.5" font-weight="400" fill="#475569" text-anchor="middle">→ live/scoreboard.json</text>
+<rect x="782" y="568" width="160" height="74" rx="8" fill="#FFFFFF" stroke="#10B981" stroke-width="1.4"/>
+<text x="862.0" y="594" font-family="Inter, DejaVu Sans, sans-serif" font-size="13.5" font-weight="700" fill="#0F172A" text-anchor="middle">Drift report</text>
+<text x="862.0" y="613" font-family="Inter, DejaVu Sans, sans-serif" font-size="10.5" font-weight="400" fill="#475569" text-anchor="middle">7-day MAE vs 30-day</text>
+<text x="862.0" y="628" font-family="Inter, DejaVu Sans, sans-serif" font-size="10.5" font-weight="400" fill="#475569" text-anchor="middle">alarm → early retrain</text>
+<path d="M 562 605 L 590 605" fill="none" stroke="#10B981" stroke-width="1.6" marker-end="url(#arrow)"/>
+<path d="M 752 605 L 780 605" fill="none" stroke="#10B981" stroke-width="1.6" marker-end="url(#arrow)"/>
+<path d="M 862 642 L 862 708" fill="none" stroke="#B45309" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+<text x="874" y="690" font-family="Inter, DejaVu Sans, sans-serif" font-size="11" font-weight="700" fill="#B45309" text-anchor="start">drift alarm → run weekly.yml now</text>
+<text x="390" y="702" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="800" fill="#047857" text-anchor="start">WEEKLY  ·  weekly.yml</text>
+<rect x="390" y="710" width="660" height="140" rx="12" fill="#FFFFFF" stroke="#A7F3D0" stroke-width="1.2"/>
+<rect x="402" y="730" width="200" height="100" rx="8" fill="#FFFFFF" stroke="#10B981" stroke-width="1.4"/>
+<text x="502.0" y="756" font-family="Inter, DejaVu Sans, sans-serif" font-size="13.5" font-weight="700" fill="#0F172A" text-anchor="middle">Train</text>
+<text x="502.0" y="775" font-family="Inter, DejaVu Sans, sans-serif" font-size="10.5" font-weight="400" fill="#475569" text-anchor="middle">LightGBM (champion cand.)</text>
+<text x="502.0" y="790" font-family="Inter, DejaVu Sans, sans-serif" font-size="10.5" font-weight="400" fill="#475569" text-anchor="middle">vs Chronos-2 (challenger)</text>
+<text x="502.0" y="805" font-family="Inter, DejaVu Sans, sans-serif" font-size="10.5" font-weight="400" fill="#475569" text-anchor="middle">reads features/ from lake</text>
+<rect x="632" y="730" width="200" height="100" rx="8" fill="#FFFFFF" stroke="#10B981" stroke-width="1.4"/>
+<text x="732.0" y="756" font-family="Inter, DejaVu Sans, sans-serif" font-size="13.5" font-weight="700" fill="#0F172A" text-anchor="middle">Promotion gate</text>
+<text x="732.0" y="775" font-family="Inter, DejaVu Sans, sans-serif" font-size="10.5" font-weight="400" fill="#475569" text-anchor="middle">beats champion (30-day)</text>
+<text x="732.0" y="790" font-family="Inter, DejaVu Sans, sans-serif" font-size="10.5" font-weight="400" fill="#475569" text-anchor="middle">80% band covers 75–85%</text>
+<text x="732.0" y="805" font-family="Inter, DejaVu Sans, sans-serif" font-size="10.5" font-weight="400" fill="#475569" text-anchor="middle">no station &gt; 15% worse</text>
+<rect x="862" y="730" width="176" height="100" rx="8" fill="#FFFFFF" stroke="#10B981" stroke-width="1.4"/>
+<text x="950.0" y="756" font-family="Inter, DejaVu Sans, sans-serif" font-size="13.5" font-weight="700" fill="#0F172A" text-anchor="middle">Register</text>
+<text x="950.0" y="775" font-family="Inter, DejaVu Sans, sans-serif" font-size="10.5" font-weight="400" fill="#475569" text-anchor="middle">new version</text>
+<text x="950.0" y="790" font-family="Inter, DejaVu Sans, sans-serif" font-size="10.5" font-weight="400" fill="#475569" text-anchor="middle">→ CHAMPION pointer</text>
+<text x="950.0" y="805" font-family="Inter, DejaVu Sans, sans-serif" font-size="10.5" font-weight="400" fill="#475569" text-anchor="middle">or keep old + log why</text>
+<path d="M 602 780 L 630 780" fill="none" stroke="#10B981" stroke-width="1.6" marker-end="url(#arrow)"/>
+<path d="M 832 780 L 860 780" fill="none" stroke="#10B981" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="390" y="882" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="800" fill="#047857" text-anchor="start">ON EVERY PUSH  ·  ci.yml</text>
+<rect x="390" y="890" width="660" height="92" rx="12" fill="#FFFFFF" stroke="#A7F3D0" stroke-width="1.2"/>
+<text x="410" y="922" font-family="Inter, DejaVu Sans, sans-serif" font-size="12" font-weight="500" fill="#0F172A" text-anchor="start">ruff  ·  pytest  ·  pandera contracts  ·  train/serve parity test  ·  CAMS ADS vs Open-Meteo parity</text>
+<text x="410" y="946" font-family="Inter, DejaVu Sans, sans-serif" font-size="12" font-weight="500" fill="#0F172A" text-anchor="start">web typecheck + build  ·  agent eval (≥ 100 questions, no invented numbers)</text>
+<text x="410" y="968" font-family="Inter, DejaVu Sans, sans-serif" font-size="12" font-weight="500" fill="#475569" text-anchor="start">pinned uv.lock / package-lock  ·  every artifact records commit + data + model revision</text>
+<rect x="390" y="1004" width="660" height="86" rx="10" fill="#FFFFFF" stroke="#10B981" stroke-width="1.6"/>
+<rect x="390" y="1004" width="6" height="86" rx="3" fill="#10B981"/>
+<text x="406" y="1028" font-family="Inter, DejaVu Sans, sans-serif" font-size="14" font-weight="700" fill="#0F172A" text-anchor="start">Monitoring</text>
+<text x="406" y="1048" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">status.json: data age per source · stations reporting · model revision</text>
+<text x="406" y="1065" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">failed run → email  ·  3 failures → "data delayed" banner on the site</text>
+<rect x="1130" y="180" width="250" height="250" rx="10" fill="#FFFFFF" stroke="#F59E0B" stroke-width="1.6"/>
+<rect x="1130" y="180" width="6" height="250" rx="3" fill="#F59E0B"/>
+<text x="1146" y="204" font-family="Inter, DejaVu Sans, sans-serif" font-size="14" font-weight="700" fill="#0F172A" text-anchor="start">&lt;name&gt;-data  (dataset)</text>
+<text x="1146" y="224" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">DATA LAKE · Parquet</text>
+<text x="1146" y="241" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start"></text>
+<text x="1146" y="258" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">raw/   CPCB · OpenAQ · GFS ·</text>
+<text x="1146" y="275" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">          CAMS · FIRMS</text>
+<text x="1146" y="292" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">clean/   hourly, validated</text>
+<text x="1146" y="309" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">features/   training tables</text>
+<text x="1146" y="326" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">forecast_archive/</text>
+<text x="1146" y="343" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">          every forecast issued</text>
+<rect x="1130" y="470" width="250" height="180" rx="10" fill="#FFFFFF" stroke="#F59E0B" stroke-width="1.6"/>
+<rect x="1130" y="470" width="6" height="180" rx="3" fill="#F59E0B"/>
+<text x="1146" y="494" font-family="Inter, DejaVu Sans, sans-serif" font-size="14" font-weight="700" fill="#0F172A" text-anchor="start">&lt;name&gt;-live  (dataset)</text>
+<text x="1146" y="514" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">SERVING ARTIFACTS · JSON</text>
+<text x="1146" y="531" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start"></text>
+<text x="1146" y="548" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">latest/forecast.json</text>
+<text x="1146" y="565" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">latest/drivers.json</text>
+<text x="1146" y="582" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">latest/scoreboard.json</text>
+<text x="1146" y="599" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">latest/status.json</text>
+<rect x="1130" y="700" width="250" height="150" rx="10" fill="#FFFFFF" stroke="#F59E0B" stroke-width="1.6"/>
+<rect x="1130" y="700" width="6" height="150" rx="3" fill="#F59E0B"/>
+<text x="1146" y="724" font-family="Inter, DejaVu Sans, sans-serif" font-size="14" font-weight="700" fill="#0F172A" text-anchor="start">&lt;name&gt;-models  (model)</text>
+<text x="1146" y="744" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">MODEL REGISTRY</text>
+<text x="1146" y="761" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start"></text>
+<text x="1146" y="778" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">versions + metrics.json</text>
+<text x="1146" y="795" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">CHAMPION pointer · model card</text>
+<rect x="1130" y="890" width="250" height="120" rx="10" fill="#FFFFFF" stroke="#F59E0B" stroke-width="1.6"/>
+<rect x="1130" y="890" width="6" height="120" rx="3" fill="#F59E0B"/>
+<text x="1146" y="914" font-family="Inter, DejaVu Sans, sans-serif" font-size="13" font-weight="700" fill="#0F172A" text-anchor="start">Why Hugging Face Hub</text>
+<text x="1146" y="934" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">free · versioned · no card</text>
+<text x="1146" y="951" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">public data = portfolio asset</text>
+<text x="1146" y="968" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">R2 = upgrade path (fsspec)</text>
+<path d="M 1050 286 L 1128 286" fill="none" stroke="#334155" stroke-width="1.8" marker-start="url(#arrowS)" marker-end="url(#arrow)"/>
+<circle cx="1089" cy="270" r="12" fill="#0F172A" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1089" y="274.5" font-family="Inter, DejaVu Sans, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">3</text>
+<path d="M 1130 830 L 1066 830 L 1066 396 L 774 396 L 774 384" fill="none" stroke="#334155" stroke-width="1.6" marker-end="url(#arrow)"/>
+<circle cx="1066" cy="620" r="12" fill="#0F172A" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1066" y="624.5" font-family="Inter, DejaVu Sans, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">4</text>
+<path d="M 1038 780 L 1128 780" fill="none" stroke="#334155" stroke-width="1.8" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+<circle cx="1089" cy="764" r="12" fill="#0F172A" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1089" y="768.5" font-family="Inter, DejaVu Sans, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">5</text>
+<path d="M 1038 356 L 1092 356 L 1092 540 L 1128 540" fill="none" stroke="#334155" stroke-width="1.8" marker-end="url(#arrow)"/>
+<circle cx="1092" cy="455" r="12" fill="#0F172A" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1092" y="459.5" font-family="Inter, DejaVu Sans, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">6</text>
+<rect x="1460" y="180" width="260" height="150" rx="10" fill="#FFFFFF" stroke="#0EA5E9" stroke-width="1.6"/>
+<rect x="1460" y="180" width="6" height="150" rx="3" fill="#0EA5E9"/>
+<text x="1476" y="204" font-family="Inter, DejaVu Sans, sans-serif" font-size="14" font-weight="700" fill="#0F172A" text-anchor="start">Web pages  (ISR · edge cache)</text>
+<text x="1476" y="224" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">Map · Station · Scoreboard · About</text>
+<text x="1476" y="241" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">MapLibre + deck.gl layers</text>
+<text x="1476" y="258" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">refreshed on revalidate</text>
+<text x="1476" y="275" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">LCP target ≤ 2.5 s</text>
+<rect x="1460" y="360" width="260" height="64" rx="10" fill="#FFFFFF" stroke="#0EA5E9" stroke-width="1.6"/>
+<rect x="1460" y="360" width="6" height="64" rx="3" fill="#0EA5E9"/>
+<text x="1476" y="384" font-family="Inter, DejaVu Sans, sans-serif" font-size="14" font-weight="700" fill="#0F172A" text-anchor="start">/api/revalidate</text>
+<text x="1476" y="404" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">secret · called after Publish</text>
+<rect x="1460" y="452" width="260" height="262" rx="10" fill="#FFFFFF" stroke="#0EA5E9" stroke-width="1.6"/>
+<rect x="1460" y="452" width="6" height="262" rx="3" fill="#0EA5E9"/>
+<text x="1476" y="476" font-family="Inter, DejaVu Sans, sans-serif" font-size="14" font-weight="700" fill="#0F172A" text-anchor="start">/api/chat  ·  AI agent</text>
+<text x="1476" y="496" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">Vercel AI SDK · tool calling · streaming</text>
+<text x="1476" y="513" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start"></text>
+<text x="1476" y="530" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">tools (read-only):</text>
+<text x="1476" y="547" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">get_forecast · get_drivers</text>
+<text x="1476" y="564" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">get_recent_obs · get_scoreboard</text>
+<text x="1476" y="581" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">get_health_advice · find_station</text>
+<text x="1476" y="598" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start"></text>
+<text x="1476" y="615" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">NUMBER VALIDATOR: every number</text>
+<text x="1476" y="632" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">must match a tool output</text>
+<rect x="1460" y="744" width="260" height="76" rx="10" fill="#FFFFFF" stroke="#0EA5E9" stroke-width="1.6"/>
+<rect x="1460" y="744" width="6" height="76" rx="3" fill="#0EA5E9"/>
+<text x="1476" y="768" font-family="Inter, DejaVu Sans, sans-serif" font-size="14" font-weight="700" fill="#0F172A" text-anchor="start">Upstash Redis</text>
+<text x="1476" y="788" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">rate limit per IP · answer cache</text>
+<rect x="1460" y="850" width="260" height="104" rx="10" fill="#FFFFFF" stroke="#0EA5E9" stroke-width="1.6"/>
+<rect x="1460" y="850" width="6" height="104" rx="3" fill="#0EA5E9"/>
+<text x="1476" y="874" font-family="Inter, DejaVu Sans, sans-serif" font-size="14" font-weight="700" fill="#0F172A" text-anchor="start">LLM fallback chain</text>
+<text x="1476" y="894" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">Groq gpt-oss-120b</text>
+<text x="1476" y="911" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">→ Gemini Flash</text>
+<text x="1476" y="928" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">→ OpenRouter free model</text>
+<path d="M 1000 168 L 1000 106 L 1758 106 L 1758 392 L 1722 392" fill="none" stroke="#334155" stroke-width="1.8" marker-end="url(#arrow)"/>
+<circle cx="1380" cy="106" r="12" fill="#0F172A" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1380" y="110.5" font-family="Inter, DejaVu Sans, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">7</text>
+<path d="M 1380 500 L 1416 500 L 1416 255 L 1458 255" fill="none" stroke="#334155" stroke-width="1.8" marker-end="url(#arrow)"/>
+<circle cx="1416" cy="380" r="12" fill="#0F172A" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1416" y="384.5" font-family="Inter, DejaVu Sans, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">8</text>
+<path d="M 1380 600 L 1458 600" fill="none" stroke="#334155" stroke-width="1.8" marker-end="url(#arrow)"/>
+<circle cx="1420" cy="600" r="12" fill="#0F172A" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1420" y="604.5" font-family="Inter, DejaVu Sans, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">9</text>
+<path d="M 1560 714 L 1560 742" fill="none" stroke="#334155" stroke-width="1.8" marker-start="url(#arrowS)" marker-end="url(#arrow)"/>
+<path d="M 1700 714 L 1700 848" fill="none" stroke="#334155" stroke-width="1.8" marker-start="url(#arrowS)" marker-end="url(#arrow)"/>
+<circle cx="1700" cy="780" r="12" fill="#0F172A" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1700" y="784.5" font-family="Inter, DejaVu Sans, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">10</text>
+<rect x="1790" y="180" width="170" height="230" rx="10" fill="#FFFFFF" stroke="#EC4899" stroke-width="1.6"/>
+<rect x="1790" y="180" width="6" height="230" rx="3" fill="#EC4899"/>
+<text x="1806" y="204" font-family="Inter, DejaVu Sans, sans-serif" font-size="14" font-weight="700" fill="#0F172A" text-anchor="start">Browser / mobile</text>
+<text x="1806" y="224" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">parents</text>
+<text x="1806" y="241" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">sensitive groups</text>
+<text x="1806" y="258" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">runners · workers</text>
+<text x="1806" y="275" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">schools · RWAs</text>
+<text x="1806" y="292" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">journalists</text>
+<rect x="1790" y="470" width="170" height="104" rx="10" fill="#FFFFFF" stroke="#EC4899" stroke-width="1.6"/>
+<rect x="1790" y="470" width="6" height="104" rx="3" fill="#EC4899"/>
+<text x="1806" y="494" font-family="Inter, DejaVu Sans, sans-serif" font-size="14" font-weight="700" fill="#0F172A" text-anchor="start">OpenFreeMap</text>
+<text x="1806" y="514" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">map tiles (no key)</text>
+<text x="1806" y="531" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">→ straight to</text>
+<text x="1806" y="548" font-family="Inter, DejaVu Sans, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start">the browser</text>
+<path d="M 1788 255 L 1722 255" fill="none" stroke="#334155" stroke-width="1.8" marker-start="url(#arrowS)" marker-end="url(#arrow)"/>
+<circle cx="1755" cy="238" r="12" fill="#EC4899" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1755" y="242.5" font-family="Inter, DejaVu Sans, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">11</text>
+<path d="M 1830 410 L 1830 440 L 1770 440 L 1770 560 L 1722 560" fill="none" stroke="#334155" stroke-width="1.8" marker-start="url(#arrowS)" marker-end="url(#arrow)"/>
+<circle cx="1770" cy="500" r="12" fill="#EC4899" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1770" y="504.5" font-family="Inter, DejaVu Sans, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">12</text>
+<path d="M 1875 470 L 1875 412" fill="none" stroke="#EC4899" stroke-width="1.8" marker-end="url(#arrow)"/>
+<rect x="30" y="1130" width="1940" height="210" rx="14" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+<text x="50" y="1162" font-family="Inter, DejaVu Sans, sans-serif" font-size="16" font-weight="800" fill="#0F172A" text-anchor="start">Flows</text>
+<circle cx="60" cy="1188" r="10" fill="#0F172A"/>
+<text x="60" y="1192" font-family="Inter, DejaVu Sans, sans-serif" font-size="10.5" font-weight="800" fill="#FFFFFF" text-anchor="middle">1</text>
+<text x="78" y="1192" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="500" fill="#0F172A" text-anchor="start">cron-job.org triggers the hourly workflow (workflow_dispatch)</text>
+<circle cx="60" cy="1214" r="10" fill="#0F172A"/>
+<text x="60" y="1218" font-family="Inter, DejaVu Sans, sans-serif" font-size="10.5" font-weight="800" fill="#FFFFFF" text-anchor="middle">2</text>
+<text x="78" y="1218" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="500" fill="#0F172A" text-anchor="start">ingest pulls every source (fallback chain, source-tagged)</text>
+<circle cx="60" cy="1240" r="10" fill="#0F172A"/>
+<text x="60" y="1244" font-family="Inter, DejaVu Sans, sans-serif" font-size="10.5" font-weight="800" fill="#FFFFFF" text-anchor="middle">3</text>
+<text x="78" y="1244" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="500" fill="#0F172A" text-anchor="start">pipeline writes raw / clean / features / forecast archive to the lake</text>
+<circle cx="60" cy="1266" r="10" fill="#0F172A"/>
+<text x="60" y="1270" font-family="Inter, DejaVu Sans, sans-serif" font-size="10.5" font-weight="800" fill="#FFFFFF" text-anchor="middle">4</text>
+<text x="78" y="1270" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="500" fill="#0F172A" text-anchor="start">Forecast loads the CHAMPION model</text>
+<circle cx="580" cy="1188" r="10" fill="#0F172A"/>
+<text x="580" y="1192" font-family="Inter, DejaVu Sans, sans-serif" font-size="10.5" font-weight="800" fill="#FFFFFF" text-anchor="middle">5</text>
+<text x="598" y="1192" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="500" fill="#0F172A" text-anchor="start">weekly Register writes a new model version (only if it passed the gate)</text>
+<circle cx="580" cy="1214" r="10" fill="#0F172A"/>
+<text x="580" y="1218" font-family="Inter, DejaVu Sans, sans-serif" font-size="10.5" font-weight="800" fill="#FFFFFF" text-anchor="middle">6</text>
+<text x="598" y="1218" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="500" fill="#0F172A" text-anchor="start">Publish writes latest/*.json to &lt;name&gt;-live</text>
+<circle cx="580" cy="1240" r="10" fill="#0F172A"/>
+<text x="580" y="1244" font-family="Inter, DejaVu Sans, sans-serif" font-size="10.5" font-weight="800" fill="#FFFFFF" text-anchor="middle">7</text>
+<text x="598" y="1244" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="500" fill="#0F172A" text-anchor="start">pipeline calls /api/revalidate so pages refresh in seconds</text>
+<circle cx="580" cy="1266" r="10" fill="#0F172A"/>
+<text x="580" y="1270" font-family="Inter, DejaVu Sans, sans-serif" font-size="10.5" font-weight="800" fill="#FFFFFF" text-anchor="middle">8</text>
+<text x="598" y="1270" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="500" fill="#0F172A" text-anchor="start">pages read latest/*.json (cached at the edge until next revalidate)</text>
+<circle cx="1100" cy="1188" r="10" fill="#0F172A"/>
+<text x="1100" y="1192" font-family="Inter, DejaVu Sans, sans-serif" font-size="10.5" font-weight="800" fill="#FFFFFF" text-anchor="middle">9</text>
+<text x="1118" y="1192" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="500" fill="#0F172A" text-anchor="start">agent tools read the same latest/*.json (one source of truth)</text>
+<circle cx="1100" cy="1214" r="10" fill="#0F172A"/>
+<text x="1100" y="1218" font-family="Inter, DejaVu Sans, sans-serif" font-size="10.5" font-weight="800" fill="#FFFFFF" text-anchor="middle">10</text>
+<text x="1118" y="1218" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="500" fill="#0F172A" text-anchor="start">agent ↔ Redis (rate limit, cache) and ↔ LLM chain (fallback)</text>
+<circle cx="1100" cy="1240" r="10" fill="#0F172A"/>
+<text x="1100" y="1244" font-family="Inter, DejaVu Sans, sans-serif" font-size="10.5" font-weight="800" fill="#FFFFFF" text-anchor="middle">11</text>
+<text x="1118" y="1244" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="500" fill="#0F172A" text-anchor="start">users load pages</text>
+<circle cx="1100" cy="1266" r="10" fill="#0F172A"/>
+<text x="1100" y="1270" font-family="Inter, DejaVu Sans, sans-serif" font-size="10.5" font-weight="800" fill="#FFFFFF" text-anchor="middle">12</text>
+<text x="1118" y="1270" font-family="Inter, DejaVu Sans, sans-serif" font-size="12.5" font-weight="500" fill="#0F172A" text-anchor="start">users chat with the agent</text>
+<text x="1610" y="1162" font-family="Inter, DejaVu Sans, sans-serif" font-size="16" font-weight="800" fill="#0F172A" text-anchor="start">Line styles</text>
+<path d="M 1610 1188 L 1680 1188" fill="none" stroke="#334155" stroke-width="1.8" marker-end="url(#arrow)"/>
+<text x="1692" y="1192" font-family="Inter, DejaVu Sans, sans-serif" font-size="12" font-weight="500" fill="#0F172A" text-anchor="start">every hour / every request</text>
+<path d="M 1610 1214 L 1680 1214" fill="none" stroke="#334155" stroke-width="1.8" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+<text x="1692" y="1218" font-family="Inter, DejaVu Sans, sans-serif" font-size="12" font-weight="500" fill="#0F172A" text-anchor="start">one-time, weekly or on alarm</text>
+<text x="1610" y="1252" font-family="Inter, DejaVu Sans, sans-serif" font-size="12" font-weight="500" fill="#475569" text-anchor="start">Boxes with dashed border = one-time</text>
+<text x="1610" y="1276" font-family="Inter, DejaVu Sans, sans-serif" font-size="12" font-weight="800" fill="#047857" text-anchor="start">Monthly cost ₹0 · no credit card</text>
+<text x="50" y="1316" font-family="Inter, DejaVu Sans, sans-serif" font-size="12" font-weight="500" fill="#475569" text-anchor="start">Decisions: D-011 to D-028 in saans/DECISIONS.md  ·  data facts: DATASETS.md  ·  measurements: OUTPUTS.md</text>
+</svg>
