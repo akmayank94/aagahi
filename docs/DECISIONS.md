@@ -729,7 +729,7 @@ Reference artboard: Design canvas "Air-quality forecast app — 3 visual directi
 | 4 Architecture | **design DONE** (ARCHITECTURE.md + image); Mayank rebuilds it on Miro the next day, then review | ARCHITECTURE.md §5 |
 | 5 Version roadmap | **DONE (draft)**: ROADMAP.md; D-030 PROPOSED | v0.1 → v1 (B0–B8) → v2 → v3 |
 | 6 UI/UX direction | **DONE** (03:21): name Aagahi (D-010), direction C · Breath + tokens + v1 screen list (D-031) | Design canvas + D-031 |
-| 7 Docs + repo | — | GitHub skeleton, README, CI |
+| 7 Docs + repo | **DONE** (03:55): monorepo `aagahi` (B0) built and tested locally: package + CLI + NAQI + unit/config guards, 24 tests, CI passing on a fresh clone (Python 3.12). Waiting for Mayank to create the empty GitHub repo before the first push | OUTPUTS §2.4 |
 | 8 Report skeleton | — | Formatted report outline |
 
 ## 3. Sources
@@ -762,3 +762,4 @@ Reference artboard: Design canvas "Air-quality forecast app — 3 visual directi
 | 2026-11-17 03:05 | T1 from the laptop (Indian IP): CPCB answers instantly but returns 404 on the old endpoint → CPCB is India-only + the endpoint must be rediscovered (D-011 amendment). T2c: GFS mixing height archived from Sep 2024; lead-exact Previous Runs only from Nov 2024 for wind/RH/shortwave (T2m from 2022); low cloud, mixing height and T850 never lead-exact → D-012 amendment (test-honesty rule; mixing-height ablation dropped for v1), new D-029 v1 weather features (PROPOSED). Mayank approved D-027, D-028 → DECIDED. ARCHITECTURE.md + diagram created; Miro rebuild next day. |
 | 2026-11-17 03:15 | Mayank approved the D-011 and D-012 amendments and D-029 → DECIDED. Phase 5: ROADMAP.md (v0.1 Season Preview → v1 B0–B8 with acceptance tests → v2 → v3, risk register); D-030 ship order PROPOSED. |
 | 2026-11-17 03:25 | Mayank chose the name **Aagahi** (D-010 DECIDED), UI direction **C · Breath** (D-031 DECIDED: tokens, NAQI colours, v1 screens) and approved D-030. Name research recorded in D-010. |
+| 2026-11-17 03:55 | Phase 7: repo skeleton B0 built (OUTPUTS §2.4). TERMS.md renamed to Aagahi, section E added. |

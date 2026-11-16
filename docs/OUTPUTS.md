@@ -122,3 +122,16 @@ No measurements. Phases 0–1 are decisions and research only (DECISIONS.md §0)
   - Low cloud, mixing height and T850 are **not** available lead-exact at all.
   - The stitched Historical Forecast (short lead) has all of them from 2022, except mixing height (from Sep 2024).
   - → D-012 amendment (test-honesty rule) and v1 feature list (D-029).
+
+### 2.4 B0 repo skeleton (17 Nov 2026, 03:55 IST)
+- **What was built:** monorepo `aagahi` (one commit, `cff6da2`).
+  - `pipeline/`: uv package with a Typer CLI (`version`, `check-config`, `aqi`; `ingest`/`forecast`/`publish` say which build phase adds them).
+  - `aagahi.aqi`: PM-based Indian NAQI. Severe-band upper breakpoint is marked provisional until checked against the CPCB document in B1.
+  - `aagahi.units`: kg/m³ → µg/m³ conversion, with a check for values that were never converted (T-14).
+  - `aagahi.config`: loads `configs/delhi-ncr.yaml` and rejects `best_match` (D-027), VIIRS S-NPP (D-015b), duplicate station IDs and bad coordinates.
+  - `configs/delhi-ncr.yaml`: 56 agency stations active on OpenAQ (DPCC 27, IMD 9, UPPCB 9, CPCB 6, IITM 3, HSPCB 2); `cpcb_id` left empty for the B1 crosswalk.
+  - Plus `docs/` (all six md files + diagram), `notebooks/phase2/`, README, MIT LICENSE, .gitignore (data, models and secrets never committed), `.env.example`, GitHub Actions CI.
+- **Results (fresh clone, Python 3.12.3):** ruff lint clean; format check clean; **24/24 tests pass** (0.28 s); `aagahi check-config` OK.
+  - Example check: `aagahi aqi --pm25 180 --pm10 300` → AQI 346 · Very Poor (99/129 × (180−121) + 301 = 346.3 ✓).
+- **Not yet done:** the push to GitHub. Mayank creates an empty public repo `aagahi`, then Claude attaches and pushes it, or Mayank uploads the zip.
+
