@@ -730,7 +730,7 @@ Reference artboard: Design canvas "Air-quality forecast app — 3 visual directi
 | 5 Version roadmap | **DONE (draft)**: ROADMAP.md; D-030 PROPOSED | v0.1 → v1 (B0–B8) → v2 → v3 |
 | 6 UI/UX direction | **DONE** (03:21): name Aagahi (D-010), direction C · Breath + tokens + v1 screen list (D-031) | Design canvas + D-031 |
 | 7 Docs + repo | **DONE** (03:55): monorepo `aagahi` (B0) built and tested locally: package + CLI + NAQI + unit/config guards, 24 tests, CI passing on a fresh clone (Python 3.12). Waiting for Mayank to create the empty GitHub repo before the first push | OUTPUTS §2.4 |
-| 8 Report skeleton | — | Formatted report outline |
+| 8 Report skeleton | **DONE** (04:20): Docs artifact "Aagahi — Project Report" with 11 sections + references + appendices, build-plan timeline and architecture figure; §9 results fill in from B1–B7 | https://claude.ai/artifact/7PbZHgRAJ262vc718zcX6g |
 
 ## 3. Sources
 - AQEWS (IITM) — ews.tropmet.res.in/about.php
@@ -763,3 +763,4 @@ Reference artboard: Design canvas "Air-quality forecast app — 3 visual directi
 | 2026-11-17 03:15 | Mayank approved the D-011 and D-012 amendments and D-029 → DECIDED. Phase 5: ROADMAP.md (v0.1 Season Preview → v1 B0–B8 with acceptance tests → v2 → v3, risk register); D-030 ship order PROPOSED. |
 | 2026-11-17 03:25 | Mayank chose the name **Aagahi** (D-010 DECIDED), UI direction **C · Breath** (D-031 DECIDED: tokens, NAQI colours, v1 screens) and approved D-030. Name research recorded in D-010. |
 | 2026-11-17 03:55 | Phase 7: repo skeleton B0 built (OUTPUTS §2.4). TERMS.md renamed to Aagahi, section E added. |
+| 2026-11-17 04:20 | Phase 8: project report skeleton created (Docs artifact). Foundation night complete except the GitHub push (waiting for the empty repo) and the Miro rebuild (next day). |
